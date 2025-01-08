@@ -1,0 +1,28 @@
+      @keyframes flashing {
+      0% { background-color: #FF0000; } /* Red */
+      20% { background-color: #00FF00; } /* Green */
+      40% { background-color: #0000FF; } /* Blue */
+      60% { background-color: #FFFF00; } /* Yellow */
+      80% { background-color: #FF00FF; } /* Magenta */
+      100% { background-color: #00FFFF; } /* Cyan */
+    }
+    body {
+      animation: flashing 0.5s infinite; /* Faster flashing */
+    }
+body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: rgb(6, 6, 6);
+        }
+        video {
+            margin-top: 50px;
+            border: 1px solid white;
+            border-radius: 10px;
+            align-items: center;
+            width: 900px;
+            height: 500px;
+        }

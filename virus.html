@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="virus.css">
+    <script src="virus.js" defer></script>
+
+</head>
+<body>
+    <h1>vaga bro</h1>
+    <div class="video">
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+
+    <script>
+        // Create an AudioContext for Web Audio API
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+        // Create an audio element
+        const audio = new Audio('your-audio-file.mp3');  // Replace with your actual audio file
+        audio.loop = true;  // Optional: loop the audio
+
+        // Create a source node
+        const audioSourceNode = audioContext.createMediaElementSource(audio);
+
+        // Connect the audio source to the destination (speakers)
+        audioSourceNode.connect(audioContext.destination);
+
+        // Start the audio playback
+        audio.play();
+
+        // Log when it's playing
+        console.log('Audio should be playing now.');
+    </script>
+
+</body>
+</html>
